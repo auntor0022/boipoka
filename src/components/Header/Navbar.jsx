@@ -2,12 +2,17 @@ import React from "react";
 import { Link } from "react-router";
 
 const Navbar = () => {
-
-    const link = <>
-        <Link to={'/'} className="mr-6 font-normal text-lg">Home</Link>
-        <Link to={'/ListedBooks'} className="mr-6 font-normal text-lg">Listed Books</Link>
-        <Link className="mr-6 font-normal text-lg">Pages to Read</Link>
+  const link = (
+    <>
+      <Link to={"/"} className="mr-6 font-normal text-lg">
+        Home
+      </Link>
+      <Link to={"/ListedBooks"} className="mr-6 font-normal text-lg">
+        Listed Books
+      </Link>
+      <Link className="mr-6 font-normal text-lg">Pages to Read</Link>
     </>
+  );
 
   return (
     <div className="navbar bg-base-100 mt-4">
@@ -40,9 +45,7 @@ const Navbar = () => {
         <a className="font-bold text-3xl">Boi POka</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {link}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{link}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>
