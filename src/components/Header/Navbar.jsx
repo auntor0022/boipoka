@@ -7,10 +7,10 @@ const Navbar = () => {
       <Link to={"/"} className="mr-6 font-normal text-lg">
         Home
       </Link>
-      <Link to={"/ListedBooks"} className="mr-6 font-normal text-lg">
+      <Link to={"/ReadList"} className="mr-6 font-normal text-lg">
         Listed Books
       </Link>
-      <Link className="mr-6 font-normal text-lg">Pages to Read</Link>
+      <Link  className="mr-6 font-normal text-lg">Pages to Read</Link>
     </>
   );
 
